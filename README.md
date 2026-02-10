@@ -12,6 +12,10 @@ PNE (recursive acronym for "PNE is Not Email") is a simple node-to-node, end-to-
 
 ## How to use the client
 - Run pne_client.py
+- Enter the address you want to register, in `name@host` format. `host` has to be a valid PNE node. If you don't know any, see below.
+- Enter a password. Remember it, as there is no way to recover it if you lose it!
+- Type `fetch` to see your messages, or `send <address>` to send a message. Exit with `exit`.
+- Next time you run the client, use the same address and password.
 
 ## Encryption
 Every PNE message is end-to-end encrypted. When you send a message, this happens:
