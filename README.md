@@ -8,6 +8,7 @@ PNE (recursive acronym for "PNE is Not Email") is a simple node-to-node, end-to-
 ## How to run a node
 - Configure port forwarding to your server for port 16361
 - Run pne_server.py
+- Your node will be accessed with your public IP, but you can add a domain (see below)
 
 ## How to use the client
 - Run pne_client.py
@@ -21,6 +22,9 @@ Every PNE message is end-to-end encrypted. When you send a message, this happens
 * The server stores the encrypted message without being able to read it.
 * When the recipient fetches messages, they decrypt locally and compute the plaintext hash.
 * If the hash matches, the client confirms deletion and the server removes the message.
+
+## Adding a domain for your node
+You can buy a domain and use an A record to point it to your public IP. You can also get a free subdomain from [FreeDNS](http://freedns.afraid.org). Any domain will work.
 
 ## Public test node
 A public node is available for testing: gamer000gaming.madhacker.biz (port 16361)
