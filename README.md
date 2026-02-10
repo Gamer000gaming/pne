@@ -1,13 +1,15 @@
 # pne
 A simple node-to-node, end-to-end encrypted message protocol meant to be a modern alternative to emails.
 
-## How to run a node
+## Initial setup
 - Clone this repo
+- In the cloned repo, run `pip install -r requirements.txt`. You may need to use a python `venv`.
+
+## How to run a node
 - Configure port forwarding to your server for port 16361
 - Run pne_server.py
 
 ## How to use the client
-- Clone this repo
 - Run pne_client.py
 
 ## Encryption
@@ -19,3 +21,7 @@ Every message is end-to-end encrypted. When you send a message, this happens:
 * The server stores the encrypted message without being able to read it.
 * When the recipient fetches messages, they decrypt locally and compute the plaintext hash.
 * If the hash matches, the client confirms deletion and the server removes the message.
+
+## Public test node
+A public node is available for testing:
+gamer000gaming.madhacker.biz (port 16361)
